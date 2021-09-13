@@ -7,6 +7,7 @@ import {
   Testimonials,
   TopBar,
   Works,
+  Menu,
 } from "./components";
 
 import "./app.scss";
@@ -17,6 +18,17 @@ function App() {
   return (
     <div className="app">
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu
+        items={[
+          { name: "home", link: "intro" },
+          { name: "portfolio", link: "portfolio" },
+          { name: "works", link: "works" },
+          { name: "testimonials", link: "testimonials" },
+          { name: "contacts", link: "contacts" },
+        ]}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+      />
 
       <div className="app__sections">
         <Intro />
