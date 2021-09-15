@@ -5,3 +5,4 @@ export { default as Testimonials } from "./testimonials/Testimonials";
 export { default as TopBar } from "./topbar/TopBar";
 export { default as Works } from "./works/Works";
 export { default as Menu } from "./menu/Menu";
+export { default as PortfolioCatItems } from "./portfolioCats/PortfolioCats";
