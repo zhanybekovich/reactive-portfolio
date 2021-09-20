@@ -1,3 +1,83 @@
+@import "../../vars";
+
 .contacts {
-  background-color: blue;
+  height: 100vh;
+
+  &__content {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    padding-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    form {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      input {
+        height: 30px;
+        font-size: 14px;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid $accent;
+        border-radius: 4px;
+      }
+
+      textarea {
+        height: 200px;
+        font-size: 14px;
+        font-family: inherit;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid $accent;
+        border-radius: 4px;
+        resize: none;
+      }
+
+      button {
+        margin-bottom: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 0;
+        background-color: $accent;
+        color: $light;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $main-color;
+        }
+      }
+
+      span {
+        padding: 10px 30px;
+        background-color: $success;
+        text-align: center;
+        color: $light;
+        border-radius: 4px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      width: 40%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      content: "";
+      background-image: url("../../assets/contact-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
 }
