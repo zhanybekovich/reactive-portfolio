@@ -45,7 +45,7 @@ function Testimonials() {
               <img src={testimonial.img} alt={testimonial.name} />
             </div>
             <div className="testimonials__center">
-              <p>{testimonial.description}</p>
+              <p>{testimonial.description.slice(0, 100) + "..."}</p>
             </div>
             <div className="testimonials__bottom">
               <h3>{testimonial.name}</h3>

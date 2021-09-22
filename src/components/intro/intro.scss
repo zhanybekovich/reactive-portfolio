@@ -1,4 +1,5 @@
 @import "../../vars";
+@import "../../media";
 
 .intro {
   display: flex;
@@ -7,11 +8,26 @@
 
   &__left {
     width: 50%;
+
+    @include media(850) {
+      width: 100%;
+    }
   }
 
   &__img-wrapper {
     width: 500px;
     height: 500px;
+
+    @include media(1024) {
+      width: 400px;
+      height: 400px;
+    }
+
+    @include media(850) {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 30px;
+    }
 
     img {
       width: 100%;
@@ -22,6 +38,11 @@
 
   &__right {
     width: 50%;
+
+    @include media(850) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__right-inner {
@@ -32,17 +53,30 @@
     h1 {
       margin: 0 0 20px;
       font-size: 60px;
+
+      @include media(850) {
+        font-size: 30px;
+      }
     }
 
     h2 {
       order: -1;
       margin: 0 0 15px;
       font-size: 35px;
+
+      @include media(850) {
+        font-size: 25px;
+      }
     }
 
     h3 {
       margin: 0 0 35px;
       font-size: 30px;
+
+      @include media(850) {
+        margin-bottom: 25px;
+        font-size: 25px;
+      }
 
       span {
         font-size: inherit;
@@ -62,11 +96,23 @@
       background-color: $accent;
       animation: blink 3s infinite ease;
 
+      @include media(850) {
+        width: 30px;
+        height: 30px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+
       .intro__icon {
         color: $light;
         font-size: 2rem;
       }
     }
+  }
+
+  @include media(850) {
+    flex-direction: column;
+    margin-bottom: 90px;
   }
 }
 

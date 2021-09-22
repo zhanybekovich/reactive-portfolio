@@ -30,12 +30,6 @@ function Works() {
         "Lorem ipsum harum animi porro saepe id totam distinctio error aperiam omnis vel eveniet excepturi nemo quasi ut iure temporibus autem sit, laudantium enim!",
       img: "https://source.unsplash.com/1600x900/?coding",
     },
-    {
-      id: 4,
-      title: "Work title 4",
-      description: "Hello",
-      img: "https://source.unsplash.com/1600x900/?coding",
-    },
   ];
 
   const handleClick = (direction) => {

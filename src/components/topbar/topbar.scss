@@ -1,4 +1,5 @@
 @import "../../vars";
+@import "../../media";
 
 .topbar {
   position: fixed;
@@ -28,12 +29,20 @@
     font-weight: 700;
     text-decoration: none;
     color: inherit;
+
+    @include media(400) {
+      font-size: 25px;
+    }
   }
 
   &__contact-item {
     display: flex;
     align-items: center;
     margin-left: 40px;
+
+    @include media(800) {
+      display: none;
+    }
 
     .topbar__icon {
       margin-right: 5px;
